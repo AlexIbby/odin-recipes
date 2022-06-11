@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+*{
+    box-sizing:border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height:100vh; 
+    background-image: linear-gradient(to right top, #d8cdd3, #d7ccd6, #d5ccd9, #d1ccdd, #cbcce0, #c7cfe5, #c2d3e8, #bdd7eb, #bbdeef, #bae5f1, #bbecf1, #bff2ef);
+    
+}
+
+/*Body Container*/
+.container{
+    width: 80%; 
+    margin: auto;
+     
+}
+/*Body Container End*/
+
+
+
+/* Navigation Bar */
+
+.navbar{
+display: flex;
+justify-content: space-between;
+padding-top: 0.5rem;
+margin-top: .75rem;
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .25rem; 
+    padding-bottom: .25rem; 
+    color: black; 
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+ 
+    
+}
+
+
+
+.navbar a:hover{
+    background-color:whitesmoke;  
+    transform: scale(1.1); 
+    padding-left: .85rem;
+    padding-right: .85rem;
+  
+}
+/* Navigation Bar*/ 
+
+/*Homepage Food Links*/
+
+.hero-header{
+    font-family: 'Space Mono', monospace;
+    text-shadow: 3px 3px 3px orange;
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+.homefoodlinks{
+    display: grid; 
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto; 
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    row-gap:0px; 
+}
+
+/*Grid Items for Home Page Food Links*/
+.homefoodlinks1{
+    grid-column-start:1; 
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+}
+
+.homefoodlinks2{
+    grid-column-start:2; 
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.homefoodlinks3{
+    grid-column-start:1; 
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.homefoodlinks4{
+    grid-column-start:2; 
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.homefoodlinks5{
+    grid-column-start:1; 
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.homefoodlinks6{
+    grid-column-start:2; 
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+
+
+
+
+/*Grid Items*/
+
+.recipe-link{   
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+
+
+.recipe-link:hover{
+    color:orange; 
+}
+
+
+.home-food-img{ 
+    width: 15rem; 
+    height: auto;
+}
+
+
+
+
+/*Homepage Food Links*/
