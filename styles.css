@@ -6,9 +6,14 @@
 }
 
 html{
-    height:100vh; 
+    height:100%; 
     background-image: linear-gradient(to right top, #d8cdd3, #d7ccd6, #d5ccd9, #d1ccdd, #cbcce0, #c7cfe5, #c2d3e8, #bdd7eb, #bbdeef, #bae5f1, #bbecf1, #bff2ef);
-    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body{
+    height: 100%; 
 }
 
 /*Body Container*/
@@ -26,37 +31,32 @@ html{
 .navbar{
 display: flex;
 justify-content: space-between;
-padding-top: 0.5rem;
-margin-top: .75rem;
+padding-top: 1rem;
+text-align: center;
 }
 
 .navbar a{
     display: inline-block;
     font-size: 1.5rem;
     text-decoration: none;
-    padding-left: .75rem;
-    padding-right: .75rem;
+    padding-left: .50rem;
+    padding-right: .50rem;
     padding-top: .25rem; 
     padding-bottom: .25rem; 
     color: black; 
     border-radius: 10px;
     transition: all .2s ease-in-out;
- 
-    
 }
-
-
 
 .navbar a:hover{
     background-color:whitesmoke;  
     transform: scale(1.1); 
     padding-left: .85rem;
     padding-right: .85rem;
-  
 }
 /* Navigation Bar*/ 
 
-/*Homepage Food Links*/
+/* Hero Header*/
 
 .hero-header{
     font-family: 'Space Mono', monospace;
@@ -64,72 +64,25 @@ margin-top: .75rem;
     text-align: center;
     font-size: 4rem;
 }
+/* Hero Header*/
 
-
+/*Homepage Food Links*/
 .homefoodlinks{
-    display: grid; 
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto; 
-    justify-items: center;
+    display: grid;  
     align-items: center;
     margin: auto;
-    row-gap:0px; 
+    row-gap:1rem; 
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-template-rows: 
+    width: 80%; 
+    justify-content: center;
+    justify-items: center;
 }
-
-/*Grid Items for Home Page Food Links*/
-.homefoodlinks1{
-    grid-column-start:1; 
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2; 
-}
-
-.homefoodlinks2{
-    grid-column-start:2; 
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.homefoodlinks3{
-    grid-column-start:1; 
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-
-.homefoodlinks4{
-    grid-column-start:2; 
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.homefoodlinks5{
-    grid-column-start:1; 
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-.homefoodlinks6{
-    grid-column-start:2; 
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-
-
-
-
-
-/*Grid Items*/
 
 .recipe-link{   
     justify-content: center;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     background-color: black;
     color: whitesmoke;
@@ -139,18 +92,52 @@ margin-top: .75rem;
     transition: all .3s ease-in-out;
 }
 
-
 .recipe-link:hover{
     color:orange; 
 }
-
 
 .home-food-img{ 
     width: 15rem; 
     height: auto;
 }
-
-
-
-
 /*Homepage Food Links*/
+
+/*Recipe Pages Styling*/
+
+.ingredients{
+    width: 80%; 
+    margin: auto;
+    background-color:#f0f2f4;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    opacity: 75%;
+}
+
+.recipe-header {
+    background-color: black;
+    color:white; 
+    padding: 15px;  
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2{
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+ul, ol{
+    font-size: 1.3rem;
+}
+
+.footer-image{
+    text-align: center;
+}
+
+
